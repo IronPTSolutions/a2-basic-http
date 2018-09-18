@@ -1,0 +1,15 @@
+<h1>Joke:</h1>
+
+<div>
+  <button (click)="onClickGetRandom()">Get Random</button>
+</div>
+
+<div *ngIf="joke">
+  {{ joke.value }}
+  <img [src]="joke.icon_url" alt=""/>
+  <div>
+    <button (click)="onClickSave(joke)">Save</button>
+  </div>
+</div>
+
+<ng-template #loading> Loading... </ng-template>

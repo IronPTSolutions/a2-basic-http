@@ -1,0 +1,12 @@
+<ul>
+  <button
+    *ngFor="let category of categories"
+    (click)="onClickCategory(category)">
+  {{ category }}
+  </button>
+    
+</ul>
+
+<div *ngIf="joke">
+  {{ joke.value }}
+</div>
